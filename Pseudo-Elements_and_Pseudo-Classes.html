@@ -1,0 +1,81 @@
+<!-- Pseudo- element and class => 
+✅ Pseudo-elements (::) → Target parts of an element (like ::before, ::after)
+✅ Pseudo-classes (:) → Target an element's state (like :hover, :focus) -->
+
+<!-- Common Pseudo-Elements
+::before → Adds content before an element.
+::after → Adds content after an element.
+::first-letter → Styles the first letter.
+::first-line → Styles the first line. -->
+
+<!-- Common Pseudo-Classes
+:hover → When mouse hovers over an element.
+:focus → When an input field is clicked.
+:nth-child(n) → Targets a specific child element.
+:first-child → Targets the first child.
+:last-child → Targets the last child. -->
+
+<!-- Summary of Common Pseudo-Classes
+Pseudo-Class	What It Does
+:hover	Styles an element when it is hovered over.
+:focus	Styles an element when it is focused (like clicking or tabbing into a form).
+:active	Styles an element when it is being actively clicked.
+:nth-child(n)	Styles the nth child element within a parent.
+:first-child	Styles the first child of a parent element.
+:last-child	Styles the last child of a parent element.
+:not()	Excludes a specific element and applies styles to the others. -->
+
+<!-- ----------------------------------------------QUESTION PRACTISE-------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and Element</title>
+    <style>
+h1::before{
+    content:"👉 " ;
+    color: red;
+}
+h1::after{
+    content:"👉 " ;
+    color: red;
+}
+p::first-letter{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+p::selection{
+    color: green;
+    background-color: black;
+}
+p:hover{
+    color: yellowgreen;
+    background-color: black;
+}
+input:focus{
+    border-color: yellow;
+    background-color: pink;
+}
+p:active{
+    transform: scale(2.95);
+}
+    </style>
+</head>
+<body>
+<h1>Healding one</h1>
+<h1>Head</h1>
+<p>This is a Paragraph</p>
+<input type="text">
+    <script>
+//        Challenge 1: Add an Arrow Before and After a Heading
+// 👉 Use ::before and ::after to add arrows (➡️ and ⬅️) to a <h1> heading.
+// 👉 Make sure the arrows are red.
+
+// Challenge 2: Style the First Letter of a Paragraph
+// 👉 Use ::first-letter to make the first letter big, bold, and blue.
+
+// Challenge 3: Change the Selection Color
+// 👉 Use ::selection to make the selected text green with a black background.
+

@@ -1,0 +1,125 @@
+/* Boiler plate code of css */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* Boiler plate code ends */
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 900px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 6px rgb(0,0,0,0.5);
+
+}
+/* Summary:
+Line Height: Adjusts the vertical space between lines of text.
+Text Alignment: Defines the horizontal alignment of text.
+Text Decoration: Adds or removes underlines, strikethroughs, or overlines.
+Font Family: Sets the typeface of the text.
+Font Size: Controls the size of the text.
+Font Weight: Adjusts the thickness of the text.
+Text Transform: Changes the case of the text.
+Letter Spacing: Controls the space between characters.
+Text Shadow: Adds shadow effects to the text. */
+
+/* Box Model
+Margin creates space outside the box (element),
+pushing it away from other elements or the container's border. This space is outside the element’s border.
+
+Padding creates space inside the box (element), 
+between the element’s content and its border. This space is inside the element.
+ */
+p{
+    display: inline;
+}
+a{
+    display: block;
+}
+/* 1. display Property
+The display property in CSS controls how an element behaves in a web page. */
+
+/* 1.Block (display: block;)
+
+Takes up the full width of its parent.
+Starts on a new line.
+Can have width and height.
+Examples: <div>, <p>, <h1> to <h6>, <section> */
+
+/* 2.Inline (display: inline;)
+
+Takes up only as much width as needed.
+Does not start on a new line.
+Cannot set width or height.
+Examples: <span>, <a>, <strong>, <em> */
+
+/* 3.Inline-Block (display: inline-block;)
+
+Behaves like inline (stays on the same line).
+Allows width and height to be set.
+Useful for buttons or images that need spacing. */
+
+/* ------------------------------------------------------------------------- */
+
+.positionParent{
+    position: relative;
+    height: 30vh;
+    width: 50vw;
+    background-color: aquamarine;
+}
+#positionChild{
+    position: absolute;
+    right: 0;
+    height: 20vh;
+    width: 20vw;
+    background-color: red;
+}
+
+
+/* 2. position Property
+
+Types of Positioning:
+
+1.Static (position: static;)
+
+Default position (normal document flow).
+Elements appear in order as written in HTML.
+
+2.Relative (position: relative;) => parent ko dedo phir child parent se bahar ni jayega
+
+Moves the element relative to its normal position.
+Use top, right, bottom, left to move it.
+
+3.Absolute (position: absolute;) => socho ki ek level uper chal gya or uske baad ye khi v jaa skta hai
+
+Removes the element from normal flow.
+Moves relative to the nearest positioned ancestor (relative, absolute, or fixed parent).
+If no positioned ancestor, moves relative to <html>
+
+Fixed (position: fixed;)
+
+Stays in the same place even when scrolling.
+Commonly used for sticky headers or floating buttons.
+
+*/
+/* 3.background Property :-
+
+The background property controls the background color, image, size, and position of an element.
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+ */

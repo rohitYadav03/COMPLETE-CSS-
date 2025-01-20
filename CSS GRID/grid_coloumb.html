@@ -1,0 +1,35 @@
+<!-- colomb hmlog ka box ka width decide krtha hai mtlb
+     box kitna mota hoga or har ek value ek columb ka width decide krtha hai  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Columns Example</title>
+    <style>
+         html, body {
+        height: 100%; /* Ensures body takes full height */
+        margin: 0; /* Removes default margin */
+      }
+      .container{
+         display: grid;   
+         grid-template-columns: 200px 2fr 1fr; /* Corrected this line */
+         background-color: rgb(180, 225, 237);
+         height: 100%;
+         width: 100%;
+         /* grid-gap: 10px; adds 10px space between each grid item */
+      }
+        .box{
+           border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+     #continer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;/* Adds space between items */
+ width: 300px;
+ height: 300px;
+ background-color: aqua;
+     }
+     #box1{
+        width: 30px;
+        height: 30px;
+        background-color: red;
+     }
+     #box2{
+        
+
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+     }
+     #box3{
+        width: 30px;
+        height: 30px;
+        background-color: green;
+     }
+    </style>
+</head>
+<body>
+    <div id="continer">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+<script>
+// justify-content (Controls X-Axis - Main Axis in Flexbox)
+// This property is used to align items horizontally (along the main axis).
+// Common values:
+
+// center → Centers items horizontally
+// flex-start → Aligns items to the start (left by default in LTR languages)
+// flex-end → Aligns items to the end (right by default)
+// space-between → Places first item at the start and last at the end, with equal space between
+// space-around → Gives equal space around each item
+// space-evenly → Gives equal space between items and also on the outer sides
+
+
+// 2. align-items (Controls Y-Axis - Cross Axis in Flexbox)
+// This property is used to align items vertically (along the cross axis).
+// Common values:
+
+// center → Centers items vertically
+// flex-start → Aligns items at the top
+// flex-end → Aligns items at the bottom
+// stretch → Stretches items to fill the height
+// baseline → Aligns items based on their text baselines
+</script>
+</body>
+</html>

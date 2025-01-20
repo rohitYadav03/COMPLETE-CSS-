@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-items Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 100px 200px 100px;
+            grid-template-rows: 50px 100px 150px;
+            gap: 10px;
+            height: 100vh;
+            background-color: lightblue;
+            justify-items: center;  /* Centers content inside the grid cell */
+        }
+
+        .box {
+            background-color: orange;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;  /* Centers text inside the box */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </div>
+</body>
+</html>

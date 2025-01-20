@@ -1,0 +1,69 @@
+<!-- Rows height define krtha hai box ka.
+ grid-template-rows: 30px 300px 300px; 
+ or iska phle value ye batatha hai ki uss pure line ki height kya oga
+
+ Dekho columb ka value har ek box ke liye alag ho sktha hai lakin rows ka 
+ 1st value us line me jitna box hai uspe lagega indivual pr ni , second value second line 
+ pr lagega jb 1st line fill ho jyega
+
+
+ Rows (grid-template-rows):
+The rows affect the height of each row in the grid.
+Each value in grid-template-rows corresponds to the height of the row and applies to all the items inside that row.
+For instance, in a 3-row grid, the height of each row will follow the values set in grid-template-rows.
+ or  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROWS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+.container{
+    width: 100%;
+     height: 100%;
+     background-color: skyblue;
+     display: grid;
+     grid-template-columns: 50px 200px 200px;
+     grid-template-rows: 30px 300px 300px;
+}
+.box{
+    border: 3px solid black;
+}
+#box1{
+    background-color: green;
+}
+#box2{
+    background-color: brown;
+
+}
+#box3{
+    background-color: aquamarine;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+flex box => agal bagal lana hai tho
+flex box children pr ni parent pr lagtha hai
+agar flex box diye tha parent ko tho 2 axis activate hota hai
+cross axis => y axis => cross axis pr kaam krne ke liye use hota alagin item
+main axis => x axis => main axis pr kaam krne ke liye use hota Justify content
+
+Pseudo- element and class => 
+✅ Pseudo-elements (::) → Target parts of an element (like ::before, ::after)
+✅ Pseudo-classes (:) → Target an element's state (like :hover, :focus)
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+justify-items:
+Purpose: Aligns grid items horizontally (along the inline axis).
+How it works: It adjusts the position of the items within their grid cells along the horizontal axis (left to right by default).
+Values:
+start: Aligns items to the left of the grid cell.
+end: Aligns items to the right of the grid cell.
+center: Aligns items to the center of the grid cell.
+stretch (default): Stretches items to fill the entire width of the grid cell
+
+
+align-items:
+Purpose: Aligns grid items vertically (along the block axis).
+How it works: It adjusts the position of the items within their grid cells along the vertical axis (top to bottom by default).
+Values:
+start: Aligns items to the top of the grid cell.
+end: Aligns items to the bottom of the grid cell.
+center: Aligns items to the center of the grid cell.
+stretch (default): Stretches items to fill the entire height of the grid cell.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+flexbox:
+justify-content: Aligns the flex items within the container (x-axis).
+align-items: Aligns the flex items within the container (y-axis).
+
+CSS Grid:
+justify-items: Aligns the grid items inside their grid cells (x-axis).
+align-items: Aligns the grid items inside their grid cells (y-axis).
