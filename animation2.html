@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style>
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        /* img{
+            height: 200px;
+             position: absolute;
+             animation-name: chutki-animation;
+             animation-duration: 3s;
+             animation-delay: 0.5s;
+        } */
+        @keyframes chutki-animation {
+            /* from{
+                left:0;
+                top: 0;
+            }
+            to{
+                left: 60%;
+                top: 50%;
+            } */
+/* ---------------------second way to give value-------------- */
+   0%{
+    left: 0;
+    right: 0;
+    rotate: 0deg;
+   }
+   50%{
+    left: 70%;
+    top: 0;
+    rotate: 0deg;
+   }
+   100%{
+    left: 90%;
+    top: 50%;
+    rotate: 360deg;
+   }
+        }
+
+        @keyframes box-ani {
+               from{
+                left: 0;
+               }
+               to{
+                left: 80%;
+               }
+        }
+        #box{
+            height: 330px;
+            width: 300px;
+            background-color: lightsalmon;
+            position:relative;
+            animation-name: box-ani;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-fill-mode:forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function:linear;
+        }
+    </style>
+</head>
+<body>
+   <div id="box">
+
+   </div>
+        <!-- <img src="https://imgs.search.brave.com/8R66AFIxJlD0cvIixKu8OSWFhCpExOtlo0ckQOXPZuQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/Y2FydG9vbmdvb2Rp/ZXMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzA4L0No/aG90YS1CaGVlbS1D/aHV0a2ktd2l0aC1D/YXQtMjEyeDMwMC5w/bmc" alt="Chutki Image"> -->
+</body>
+</html>

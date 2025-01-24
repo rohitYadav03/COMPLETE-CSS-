@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+             width: 100%;
+        }
+        body{
+            background-color: #F8F8F8;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color:#F8F8F8;
+            position: relative;
+            padding-top: 0.1px;
+        }
+        #nav{
+            height: 12vh;
+            width: 100%;
+            /* background-color: red; */
+            margin-top: 3%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        #nav h1{
+            /* background-color: rgb(17, 147, 62); */
+            height: 100%;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monument;
+            font-size: 45px;
+            letter-spacing: -1.6px;
+        }
+
+        #nav h2{
+            /* background-color: yellow; */
+            height: 100%;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 2px solid black;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        #nav h2:nth-last-child(1){
+            /* background-color: aqua; */
+            width: 8%;
+            padding-right: 3%;
+        }
+        #nav h2#new {
+    /* background-color: chocolate; */
+    width: 30%;
+    padding-right: 3%;
+}
+#center{
+    height: 88%;
+    width: 100%;
+    /* background-color: red; */
+  padding: 4vw;
+  position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: #fff;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3vw;
+    font-weight: 600;
+}
+#over1 h2{
+   font-size: 1vw;
+   padding: 2vw 2.1vw;
+   border-radius: 50%;
+   border: 1px solid #fff;
+  
+   /* background-color: blue; */
+}
+#over2{
+    /* color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 1.5vw ;
+    font-weight: 500;
+
+}
+#over2 img{
+    height: 3vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: aqua; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+#container{
+    height: 100%;
+    width: 110%;
+    /* background-color:blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height:100%;
+    border-radius: 50%;
+    width: 15.2%;
+    object-fit: cover;
+    object-position: 40% 30%;
+    margin: 0.9vw;
+
+}
+@keyframes anime {
+    froma{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+#alphabet h5{
+    font-size: 2.2vw;
+    /* background-color: aqua; */
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  border-bottom: 2px solid #000;
+  letter-spacing: 2px;
+}
+#alphabet h6{
+    font-size: 1.4vw;
+    /* background-color: aqua; */
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 2px;
+  /* background-color: yellow; */
+  padding: 0.6vw 0.8vw;
+  border-radius: 50%;
+  border: 1px solid #00000000;
+  transition: all ease 0.2s;
+
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+}
+#page2{
+    /* background-color: #000; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 4vw;
+    gap: 10vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+   
+}
+#page2-part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+#page2-part1 h1{
+    font-family:monument;
+    font-weight: 400;
+   letter-spacing: -1px;
+   margin-top: 1.5vh;
+}
+#page2-part2 img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
+}
+#page2-part2{
+    height: 100%;
+    width: 46%;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#bottom{
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left h3{
+    font-weight: 300;
+
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    /* background-color: skyblue; */
+    position: relative;
+    padding: 5vw 4vw;
+}
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 7vh;
+}
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+   
+}
+.elem img{
+    height: 85px;
+    width: 110px;
+    position: absolute;
+    border-radius: 50%;
+    left: 15%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.7s;
+}
+.elem h4{
+    /* background-color: red; */
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.elem .elem-part2{
+    width: 45%;
+    /* background-color: red; */
+}
+.elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 500;
+}
+.elem-part2 h5{
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem:nth-last-child(1)img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:hover{
+    background-color: #6a6a6a2d;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+#marque{
+    /* height: 20vh; */
+    /* background-color: red; */
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.51vw;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 3px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+#footer{
+    height: 100%;
+    width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="main">
+<div id="nav">
+    <h1>premier</h1>
+  <h2>Model</h2>
+ <h2>Women / Man</h2>
+<h2 id="new">Agency/Blog/Information</h2>
+<h2><i class="ri-search-line"></i></h2>
+</div>
+<div id="center">
+    <div id="content">
+<video autoplay loop muted src="./DIOR Fashion Film 2020 ｜ Directed by VIVIENNE & TAMAS.mp4"></video>
+<div id="overlay">
+    <div id="over1">
+        <h1>Photography  <br>and films</h1>
+        <h2>01</h2>
+    </div>
+    <div id="over2">
+        <h4>Explore</h4>
+        <img src="./icons8-arrow-100.png" alt="">
+    </div>
+</div>
+
+    </div>
+</div>
+<div id="scroll">
+<div id="container">
+    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"    alt="">
+<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+<img src="https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+</div>
+<div id="container">
+    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"    alt="">
+    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+</div>
+</div>
+<div id="alphabet">
+<h5>All</h5>
+<h6>A</h6>
+<h6>B</h6>
+<h6>C</h6>
+<h6>D</h6>
+<h6>E</h6>
+<h6>F</h6>
+<h6>G</h6>
+<h6>H</h6>
+<h6>I</h6>
+<h6>J</h6>
+<h6>K</h6>
+<h6>L</h6>
+<h6>M</h6>
+<h6>N</h6>
+<h6>O</h6>
+<h6>P</h6>
+<h6>Q</h6>
+<h6>R</h6>
+<h6>S</h6>
+<h6>T</h6>
+<h6>U</h6>
+<h6>V</h6>
+<h6>W</h6>
+<h6>X</h6>
+<h6>Y</h6>
+<h6>Z</h6>
+</div>
+<div id="page2">
+<div id="page2-part1">
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+<h1>VOGUE / SHOT</h1>
+</div>
+<div id="page2-part2">
+    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+    <div id="bottom">
+        <div id="left">
+            <h3>Hannah Molter <br> features in a <br> fashion story by <br> the lake for <br>Vogue new shot</h3>
+        </div>
+        <div id="right">
+            <p>Such exposure to the fashion and <br> beauty industries enabled her <br> 
+                passion for branding and <br> creativity to transition from one <br> side of camera to the other </p>
+        </div>
+    </div>
+</div>
+
+</div>
+<div id="page3">
+    <h1>Updates</h1>
+    <div class="elem">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h4>Mens <br> Fashinon</h4>
+        <div class="elem-part2">
+            <h1>Khadim & Tom Ford</h1>
+            <h5>25th March 2020</h5>
+        </div>
+    </div>
+    <div class="elem">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h4>Mens <br> Fashinon</h4>
+        <div class="elem-part2">
+            <h1>Khadim & Tom Ford</h1>
+            <h5>25th March 2020</h5>
+        </div>
+    </div>
+    <div class="elem">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h4>Mens <br> Fashinon</h4>
+        <div class="elem-part2">
+            <h1>Khadim & Tom Ford</h1>
+            <h5>25th March 2020</h5>
+        </div>
+    </div>
+    <div class="elem">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h4>Mens <br> Fashinon</h4>
+        <div class="elem-part2">
+            <h1>Khadim & Tom Ford</h1>
+            <h5>25th March 2020</h5>
+        </div>
+    </div>
+</div>
+<div id="marque">
+    <h1>Premier model 2020</h1>
+    <h1>Premier model 2020</h1>
+    <h1>Premier model 2020</h1>
+    <h1>Premier model 2020</h1>
+    <h1>Premier model 2020</h1>
+    
+</div>
+<div id="footer">
+   
+</div>
+    </div>
+</body>
+</html>
